@@ -97,7 +97,7 @@ export default class RideHistoryScreen extends Component {
               {`${item.bike_type} ( ${item.bike_id} )`}
             </ListItem.Title>
             <ListItem.Subtitle style={styles.subtitle}>
-              {`This bike is ${transactionType} by you.`}
+              {`Esta bicicleta está ${transactionType} por ti.`}
             </ListItem.Subtitle>
             <View style={styles.lowerLeftContaiiner}>
               <View style={styles.transactionContainer}>
@@ -144,14 +144,14 @@ export default class RideHistoryScreen extends Component {
             <TextInput
               style={styles.textinput}
               onChangeText={text => this.setState({ searchText: text })}
-              placeholder={"Type here"}
+              placeholder={"Escribe aquí"}
               placeholderTextColor={"#FFFFFF"}
             />
             <TouchableOpacity
               style={styles.scanbutton}
               onPress={() => this.handleSearch(searchText)}
             >
-              <Text style={styles.scanbuttonText}>Search</Text>
+              <Text style={styles.scanbuttonText}>Buscar</Text>
             </TouchableOpacity>
           </View>
         </View>
